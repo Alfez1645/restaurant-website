@@ -1,0 +1,139 @@
+/* Mobile */
+@media (max-width: 767px) {
+   /* navbar */
+   nav{
+    z-index: 1000;
+   }
+    .nav-logo h1{
+        font-size: 16px;
+    } 
+    .nav-logo p{
+        font-size: 11px;
+    }
+    .nav-link{
+        position: fixed;
+        z-index: 999;
+        background-color:#0C0D0D;
+        top: -350px;
+        left: 10px;
+        right: 10px;
+        flex-direction: column;
+        padding: 20px ;
+        width: auto;
+        align-items: flex-start;
+        gap: 16px;
+        transition: 0.6s ease;
+    }
+    .showNavlink{
+        top: 70px;
+    }
+    .nav-link a{
+        border-bottom: 2px solid #1F201F;
+        width: 100%;
+        padding-bottom: 20px;
+        
+    }
+    .nav-link button{
+        background-color:transparent;
+        font-size: 16px;
+        padding: 0;
+    }
+    .nav-link button:hover{
+        background-color: transparent;
+        box-shadow: none;
+    }
+    #Navbar i{
+        display: flex;
+        font-size: 22px;
+    }
+    /* navbar */
+    /* hero section */
+    #hero-section{
+        height: 90%;
+        padding-left: 0px  ;
+        padding: 0 20px;
+        padding-top: 60px;
+    }
+    .hero-box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+    .hero-box h1{
+        font-size: 54px;
+    }
+    .hero-box p{
+        font-size: 12px;
+    }
+    .hero-box .btn2 , .hero-box .btn1{
+        width: 100%;
+        font-size: 18px;
+        margin: 0px 0px;
+    }
+    /* hero section */
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* navbar */
+    nav{
+    z-index: 1000;
+   }
+    .nav-link{
+        position: fixed;
+        z-index: 999;
+        background-color:#0C0D0D;
+        top: -350px;
+        left: 10px;
+        right: 10px;
+        flex-direction: column;
+        padding: 20px ;
+        width: auto;
+        align-items: flex-start;
+        gap: 16px;
+        transition: 0.6s ease;
+    }
+    .showNavlink{
+        top: 100px;
+    }
+    .nav-link a{
+        border-bottom: 2px solid #1F201F;
+        width: 100%;
+        padding-bottom: 20px;
+        
+    }
+    .nav-link button{
+        background-color:transparent;
+        font-size: 16px;
+        padding: 0;
+    }
+    .nav-link button:hover{
+        background-color: transparent;
+        box-shadow: none;
+    }
+    #Navbar i{
+        display: flex;
+        font-size: 22px;
+    }
+    /* navbar */
+     /* hero section */
+    #hero-section{
+        height: 60%;
+        padding-left: 50px;
+        padding-top: 90px;
+    }
+    .hero-box{
+        width: 60%;
+    }
+    .hero-box h1{
+        font-size: 59px;
+    }
+    .hero-box p{
+        font-size: 16px;
+    }
+        .hero-box .btn1 , .hero-box .btn2 {
+    font-size: 22px;
+    }
+    /* hero section */
+}

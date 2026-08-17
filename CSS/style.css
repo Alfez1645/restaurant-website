@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0C0D0D;
+}
+/* navbar */
+nav{
+  width: 100%;
+  min-height: 80px;
+  position: fixed;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 2%;
+  transition: transform 0.3s ease;
+  transform: translateY(-30px);
+  opacity: 0;
+}
+.nav-logo{
+}
+.nav-logo h1{
+  font-family: "Pacifico";
+  font-weight: 400;
+  font-style: normal;
+}
+.nav-logo p{
+  color: #E85D16;
+}
+.nav-link{
+  display: flex;
+  gap: 26px;
+  align-items: center;
+}
+.nav-link a{
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: 0.4s ease;
+  height: fit-content;
+}
+.nav-link a:hover{
+  color: #FF7B2C;
+  border-bottom: 1px solid #D98B45;
+  transform: translateY(-5px);
+}
+.nav-link button{
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #E85D16;
+  border: none;
+  color: #F4EFE6;
+  border-radius: 30px;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+.nav-link button:hover{
+  background-color: #F06A20;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(232, 93, 22, 0.35);
+}
+.blurnav{
+  background: rgba(10, 11, 10, .8);
+  backdrop-filter: blur(16px);
+}
+#Navbar i{
+  display: none;
+}
+/* navbar */
+/* herosection */
+#hero-section{
+  background-image: url(../assets/heroimage.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  padding-left: 130px  ;
+  padding-top: 120px;
+  overflow: hidden;
+  transition: 0.8s  ,linear;
+  animation: imageZoom 6s infinite alternate;
+  background-repeat: no-repeat;
+  animation-delay: 1s;
+}
+.hero-box{
+  width: 55%;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: transform 0.3s linear;
+}
+.hero-box h1{
+  font-size: 100px;
+  margin-bottom: 5px;
+}
+.hero-box .btn1 {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 30px 10px;
+  border: none;
+  color: #FFFFFF;
+  background-color: #E85D16;
+  border-radius: 10px;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+.hero-box .btn1:hover{
+  background-color: #F06A20;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(232, 93, 22, 0.35);
+}
+.hero-box .btn2{
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 30px 10px;
+  border-radius: 10px;
+  transition: 0.4s ease;
+  cursor: pointer;
+  color: #FFFFFF;
+  background: rgba(255,255,255,.08);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,.15);
+}
+.hero-box .btn2:hover{
+   transform: translateY(-5px);
+   background-color: #FFFFFF;
+   color: black;
+}
+@keyframes imageZoom{
+  from{
+  background-size: 100%;
+  }
+  to{
+    background-size: 115%;
+  }
+}
+/* herosection */
