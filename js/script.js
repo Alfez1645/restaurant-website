@@ -34,6 +34,15 @@ gsap.to("#sign-dish-box", {
         start: "top 80%"
     }
 });
+gsap.to(".story-img", {
+    x: 0,
+    opacity: 1,
+    duration: 1,
+    scrollTrigger: {
+        trigger: ".story-img",
+        
+    }
+});
 // 
 // menu button
 const navlink = document.querySelector(".nav-link");
