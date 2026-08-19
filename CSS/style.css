@@ -28,6 +28,7 @@ nav{
   transition: transform 0.3s ease;
   transform: translateY(-30px);
   opacity: 0;
+  z-index: 999;
 }
 .nav-logo{
 }
@@ -92,8 +93,7 @@ nav{
   padding-top: 120px;
   overflow: hidden;
   transition: 0.8s  ,linear;
-  animation: imageZoom 6s infinite alternate;
-  background-repeat: no-repeat;
+  animation: imageZoom 16s infinite alternate;
   animation-delay: 1s;
 }
 .hero-box{
@@ -139,12 +139,107 @@ nav{
    background-color: #FFFFFF;
    color: black;
 }
-@keyframes imageZoom{
+/* @keyframes imageZoom{
   from{
   background-size: 100%;
   }
   to{
     background-size: 115%;
   }
-}
+} */
 /* herosection */
+/* Signature Dishes */
+#sign-dish-box{
+  padding: 3%;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: transform 0.3s linear;
+}
+.sign-heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  gap: 10px;
+}
+.sign-heading p{
+  color:#E85D16 ;
+}
+.sign-heading h1{
+  font-family: "Pacifico";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 300%;
+}
+.sign-box{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4 , 1fr);
+  gap:3%;
+  margin-top: 4%;
+}
+.dish-box{
+  background-color:#141615;
+  overflow: hidden;
+  border-bottom: 3px solid #E85D16;
+  cursor: pointer; 
+  background-repeat: no-repeat;
+  transform: scale(1);
+  transition: transform 0.3s linear;
+}
+.dish-box:hover{
+  border: 1px solid #E85D16;
+  border-bottom: 3px solid #E85D16;
+  box-shadow: 0 10px 30px rgba(232, 93, 22, 0.35);
+  transform: translateY(-10px);
+}
+.dish-img-wrapper{
+  width: 100%;
+  height :245px;
+  overflow: hidden;
+}
+.dish-box:hover .dish-img{
+  transform: scale(1.07);
+}
+.dish-img{
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: bottom;
+  transition: transform 0.3s linear;
+}
+.dish-img1{
+    background-image: url(../assets/photo-1467003909585-2f8a72700288.avif);
+}
+.dish-img2{
+  background-image: url(../assets/photo-1555949258-eb67b1ef0ceb.avif);
+}
+.dish-img3{
+  background-image: url(../assets/photo-1544025162-d76694265947.avif);
+}
+.dish-img4{
+  background-image: url(../assets/photo-1578985545062-69928b1d9587.avif);
+}
+.dish-info{
+  padding: 5%;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.dish-info h2{
+  font-family: "Pacifico";
+  font-weight: 400;
+  font-style: normal;
+}
+.dish-info p{
+  color:  #A9AAA5;
+}
+.dish-info h3{
+  color: #E85D16;
+}
+.dish-box:hover  .dish-info h3{
+  color: #F06A20;
+}
+/* Signature Dishes */

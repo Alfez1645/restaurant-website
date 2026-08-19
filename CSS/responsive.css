@@ -72,6 +72,17 @@
         margin: 0px 0px;
     }
     /* hero section */
+    /*  */
+    .sign-heading h1{
+        font-size: 200%;
+    }
+    .sign-box{
+        overflow-x: scroll;
+        scrollbar-width: none;
+    }
+    .dish-box{
+        width: 250px;
+    }
 }
 
 /* Tablet */
@@ -132,8 +143,16 @@
     .hero-box p{
         font-size: 16px;
     }
-        .hero-box .btn1 , .hero-box .btn2 {
-    font-size: 22px;
+    .hero-box .btn1 , .hero-box .btn2 {
+        font-size: 22px;
     }
     /* hero section */
+    /*  */
+    .sign-box{
+        overflow-x: scroll;
+        scrollbar-width: none;
+    }
+    .dish-box{
+        width: 250px;
+    }
 }
