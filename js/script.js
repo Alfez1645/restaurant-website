@@ -28,7 +28,6 @@ gsap.to("#sign-dish-box", {
     y: 0,
     opacity: 1,
     duration: 1,
-    stagger: 0.2,
     scrollTrigger: {
         trigger: "#sign-dish-box",
         start: "top 80%"
@@ -49,6 +48,14 @@ gsap.to(".menu-items" ,{
     duration: 1,
     scrollTrigger: {
         trigger: ".menu-items",
+    }
+});
+gsap.to("#gallery-block", {
+    y: 0,
+    opacity: 1,
+    duration: 1,
+    scrollTrigger: {
+        trigger: "#gallery-block",
     }
 });
 // 
