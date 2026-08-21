@@ -58,6 +58,14 @@ gsap.to("#gallery-block", {
         trigger: "#gallery-block",
     }
 });
+gsap.to("#reservation-table-section", {
+    y: 0,
+    opacity: 1,
+    duration: 1,
+    scrollTrigger: {
+        trigger: "#reservation-table-section",
+    }
+});
 // 
 // navbar button
 const navlink = document.querySelector(".nav-link");
@@ -227,3 +235,61 @@ allmenubtn.forEach(button =>{
 })
 loadmenu("starters")
 // menu btn
+// reservation
+
+const reservationsubmitbtn= document.querySelector(".reservation-submit-btn");
+reservationsubmitbtn.addEventListener("click" , () =>{
+    const reservationname = document.querySelector(".reservation-name");
+    const reservationcontact = document.querySelector(".reservation-contact");
+    const reservationguest = document.querySelector(".reservation-guest");
+    const reservationdate = document.querySelector(".reservation-date");
+    const reservationtime = document.querySelector(".reservtation-time");
+    const resvarmess = document.querySelector(".resvar-mess");
+
+    let isValid = true;
+
+    if(reservationname.value === "" || !(/^[A-Za-z ]+$/.test(reservationname.value))){
+        isValid = false;
+        reservationname.classList.add("invalid");
+        resvarmess.classList.remove("resvar-mess-show");
+    }
+    else{
+        reservationname.classList.remove("invalid");
+    }
+    if(reservationcontact.value.trim() === "" ||  Number(reservationcontact.value) <= 10 || !(/^[6-9]\d{9}$/.test(reservationcontact.value)) ){
+        isValid = false;
+        reservationcontact.classList.add("invalid");
+        resvarmess.classList.remove("resvar-mess-show");
+    }
+    else{
+        reservationcontact.classList.remove("invalid");
+    }
+    if(reservationdate.value.trim()  === ""){
+       isValid = false;
+        reservationdate.classList.add("invalid");
+        resvarmess.classList.remove("resvar-mess-show");
+    }
+    else{
+      reservationdate.classList.remove("invalid");
+    }
+    if(reservationtime.value.trim()  === ""){
+       isValid = false;
+        reservationtime.classList.add("invalid");
+        resvarmess.classList.remove("resvar-mess-show");
+    }
+    else{
+      reservationtime.classList.remove("invalid");
+    }
+    
+    if(!isValid){
+      return ;
+    }
+    else{
+      reservationname.value ="";
+      reservationtime.value ="";
+      reservationdate.value ="";
+      reservationcontact.value ="";
+      resvarmess.classList.add("resvar-mess-show")
+    }
+})
+// reservation

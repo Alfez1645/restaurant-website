@@ -602,3 +602,197 @@ nav{
   box-shadow: 0 10px 30px rgba(232, 93, 22, 0.35);
 }
 /* gallery-block */
+/* reservation-table-section */
+#reservation-table-section{
+  display: flex;
+  padding: 50px 100px;
+  background-color: #F4EFE6;
+  justify-content: space-between;
+  transform: translatey(30px);
+  opacity: 0;
+  transition: transform linear;
+  position: relative;
+}
+.reservation-heading{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.reservation-heading h3{
+  color: #E85D16;
+}
+.reservation-heading h1{
+  font-size: 64px;
+  font-weight: 100;
+  font-family: "Pacifico";
+  font-style: normal;
+  line-height:1.5;
+  padding-bottom: 15px;
+}
+.reservation-heading h4{
+  font-weight: 100;
+}
+.reservation-input{
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  gap: 50px;
+}
+.resvar-heading-design{
+  font-size: 12px;
+}
+.resvar-input-design{
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #A9AAA5;
+  width: 100%;
+  font-size: 16px;
+  padding: 5px;
+  margin-top: 8px;
+}
+.resvar-input-design:focus{
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #E85D16;
+}
+.resvar-name input:focus .resvar-name p{
+  color: #E85D16;
+}
+.reservation-input button{
+  background-color:#E85D16;
+  border: none;
+  font-size: 22px;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  color: #FFFFFF;
+  padding: 10px 50px;
+  border-radius: 10px;
+  transition: 0.4s ease;
+}
+.reservation-input button:hover{
+  background-color: #F06A20;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(232, 93, 22, 0.35);
+}
+#reservation-table-section .resvar-mess{
+  position: absolute;
+  right: 380px;
+  bottom: 20px;
+  display: none;
+}
+#reservation-table-section .resvar-mess-show{
+  display: flex;
+}
+.invalid{
+  border-bottom: 2px solid red;
+}
+/* reservation-table-section */
+
+/* footer  */
+/* footer 1 */
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+#Footer-1{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+.section-1{
+  color: #FFFFFF;;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section-1 h3{
+  color: #E85D16;
+  font-weight: 100;
+}
+.section-1 p{
+  font-size: 10px;
+}
+.section-1-links{
+  display: flex;
+  gap: 10px;
+}
+.section-1-links i{
+   font-size: 13px;
+   color:#FFFFFF;
+   transition: 0.4s ease;
+   border: 1px solid #A9AAA5;
+   border-radius: 50%;
+   padding: 12px 18px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.section-1-links i:hover{
+  color: #E85D16;
+  transform: translateY(-10px);
+}
+.section-2{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section-2 p{
+  color:#FFFFFF;
+}
+.section-2 a{
+  font-size: 12px;
+  text-decoration: none;
+  color: #A9AAA5;
+}
+.section-2 a:hover{
+  color: #E85D16;
+}
+
+.section-3{
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section-3 p{
+  color: #A9AAA5;
+}
+.section-4{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section-4 h3{
+  color: #F4EFE6;
+}
+.section-4 p{
+  color: #A9AAA5;
+}
+/* footer 1 */
+/* footer-2 */
+#footer-2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+.footerline{
+  height: 1px;
+  width: 70%;
+  background-color: #A9AAA5;
+}
+#footer-2 p{
+  color: #FFFFFF;
+  font-size: 50px;
+}
+/* footer-2 */
+/* footer  */
