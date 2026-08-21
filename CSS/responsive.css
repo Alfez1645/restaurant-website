@@ -92,7 +92,7 @@
     }
     .story-img-wrapper{
         height: 330px;
-        width: 380px;
+        width: 340px;
     }
     .img-chef{
         right: 10px;
@@ -109,11 +109,11 @@
         font-size: 12px;
    }
    .our-story-2 h1{
-        width: 400px;
+        width: 80%;
         font-size: 40px;
     }
     .our-story-2 p{
-        width: 400px;
+        width: 90%;
     }
     .our-story-2 .span-line2{
         width: 100%;
@@ -125,7 +125,7 @@
     /* our menu section */
     .menu-items{
         grid-template-columns: 1fr;
-        padding: 0 20px;
+        padding: 0 10px;
     }
     .item-name p{
         font-size: 13px;
